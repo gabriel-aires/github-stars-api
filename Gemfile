@@ -14,6 +14,9 @@ gem "activerecord-enhancedsqlite3-adapter", ">= 0.8"
 # Background job processing using in-memory queues
 gem 'sucker_punch', '~> 3.0'
 
+# Consume third party APIs
+gem 'httparty', '~> 0.22'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
