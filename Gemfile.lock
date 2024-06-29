@@ -59,6 +59,9 @@ GEM
       activemodel (= 7.1.3.4)
       activesupport (= 7.1.3.4)
       timeout (>= 0.4.0)
+    activerecord-enhancedsqlite3-adapter (0.8.0)
+      activerecord (>= 7.1)
+      sqlite3 (>= 1.6)
     activestorage (7.1.3.4)
       actionpack (= 7.1.3.4)
       activejob (= 7.1.3.4)
@@ -186,6 +189,8 @@ GEM
     sqlite3 (1.7.3-x86_64-darwin)
     sqlite3 (1.7.3-x86_64-linux)
     stringio (3.1.1)
+    sucker_punch (3.2.0)
+      concurrent-ruby (~> 1.0)
     thor (1.3.1)
     timeout (0.4.1)
     tzinfo (2.0.6)
@@ -205,11 +210,13 @@ PLATFORMS
   x86_64-linux
 
 DEPENDENCIES
+  activerecord-enhancedsqlite3-adapter (>= 0.8)
   bootsnap
   debug
   puma (>= 5.0)
   rails (~> 7.1.3, >= 7.1.3.4)
   sqlite3 (~> 1.4)
+  sucker_punch (~> 3.0)
   tzinfo-data
 
 RUBY VERSION
