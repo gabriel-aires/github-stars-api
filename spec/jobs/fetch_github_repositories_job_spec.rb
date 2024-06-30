@@ -24,19 +24,15 @@ RSpec.describe FetchGithubRepositoriesJob, type: :job do
 
       it "saves repository information" do
         expect(client).to receive(:fetch_user_repositories)
-
         expect { described_class.new.perform(param) }.to change { Repository.count }.by(1)
       end
     end
 
     context "with an unknown login" do
-
       it "raises an exception" do
         expect { described_class.new.perform(param) }.to raise_error(ActiveRecord::RecordNotFound)        
       end
-
     end
 
   end
-
 end
