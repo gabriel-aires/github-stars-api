@@ -1,24 +1,29 @@
-# README
+# Github Stars API
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a simple API that interacts with Github to fetch data about user repositories
 
-Things you may want to cover:
+## Tools used for this project
 
-* Ruby version
+- SQLite
+- Sucker Punch
+- HTTParty
+- Webmock
 
-* System dependencies
+## Usage
 
-* Configuration
+```
+bundle
+rails db:migrate
+rails server
+```
 
-* Database creation
+## Endpoints
 
-* Database initialization
+- POST /user/:login (adds user and fetches repository information in the background)
+- GET /user/:login/repositories (list repositories for a given user)
 
-* How to run the test suite
+## Testing
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+```
+rspec
+```
