@@ -19,8 +19,8 @@ rails server
 
 ## Endpoints
 
-- POST /user/:login (adds user and fetches repository information in the background)
-- GET /user/:login/repositories (list repositories for a given user)
+- POST /users/:login (adds user and fetches repository information in the background)
+- GET /users/:login/repositories (list repositories for a given user)
 
 ## Testing
 
